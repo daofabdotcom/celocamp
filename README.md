@@ -1,6 +1,6 @@
 # Celo Camp Instructions for Testing
 
-# Interoperable cUSD 
+# Facilitating Interoperable cUSD by connecting cUSD with local e-money issuers/solutions
 <br> 
 Background:- <br>
 For the purpose of testing, we have created 2 issuers (Issuer A and B) and 2 users (User A and B). <br>
