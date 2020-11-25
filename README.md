@@ -6,7 +6,7 @@ Background:- <br>
 For the purpose of testing, we have created 2 issuers (Issuer A and B) and 2 users (User A and B). <br>
 An issuer refers to a e-money issuer/solution such as Celo. User A is a user of Issuer A (and User B is a user of Issuer B). <br>
 An Ubin escrow of USD$10,000 has been created by Issuer A in favour of Issuer B.  <br>
-User A has an account of USD $100 balance with Issuer B and User B has an account of USD $200 balance with Issuer B.   <br>
+User A has an account of USD $100 balance with Issuer A and User B has an account of USD $200 balance with Issuer B.   <br>
  <br>
 http://localhost:8080/  <br>
  <br>
