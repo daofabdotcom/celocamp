@@ -1,0 +1,346 @@
+{
+	"variables": [],
+	"info": {
+		"name": "CELO",
+		"_postman_id": "9960686a-2293-7da7-2a2b-9a0d88481e96",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Reserve",
+			"request": {
+				"url": "http://localhost:8080/reserve",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"type\": \"CONF\",\n    \"senderId\": \"userA\",\n    \"senderIssuerId\": \"issuerA\",\n    \"recipientId\": \"userB\",\n    \"recipientIssuerId\": \"issuerB\",\n    \"ubinEscrowId\": \"IssuerAtoIssuerBEscrowId1\",\n    \"amount\": \"500.0\",\n    \"timestamp\": \"\",\n    \"status\": \"SUCCESS\",\n    \"signature\": \"atAF59jdFAC9OJ3CEjk9wv7I01XsCzHlJZLNNaqNK8KqUpBc0T21og81KYvqLG8GmubhUd5I0MjQj2rwlSJYT5tuos9DVqbAE5Yu9uXV04LE1q3wWRS+D5rZza3Ux8bJpB+7WrHSZ1YHAQg1emGmhdK5tg17sxe2HAaIyUhAmbCcCpCy/KDFgsif+ng+/ruR++gqiYP1TQ5aBX9zCSL6J7a4Zh8mILxc1gduuDkJhiMYCWh7j8R6QQGmxEimnlj3XUeL/Xsr5iSLRKd0hdkf2KjCQ1x8BI4WT5r1882FHPa6uhNRlSXY+ApYDQ/NLgXERn5Td4BWa7juFenUoMwJeAyljgPUrD/wxnuxZ6Yj2olqxeRzmtuIBVxCEl4wiJIskrDvFPKSUyAetqPALJMyRMnl1mgJQWZJl1Ed4RBvtEPzK536jx7akeAQqqJGP4qYNnr4YCateKecsK4BMnXLSalWXT6OZIwwrou+9hoMmdueWYTC/MagUyDvAYK7/gMs6uJ6BbxKMqNaYCwniUZRGBH7HHwnm48UyJXMnlnB7sGfp2rY30/6pxwdNe6ngBjmxWHV3N6DfAXND86En4MVLfYdCaVBKyiUnSAXn+9S0M6ohc41yyZ8K8kyFBckmkvmb0B2v1GmU9gED6wh4WtLqTkFPjLjikQnwUnEuEK4jtA=\"\n}"
+				},
+				"description": "Proof of Reserve"
+			},
+			"response": [
+				{
+					"id": "676d397c-82ff-4634-b073-10fa22d6c283",
+					"name": "Reserve",
+					"originalRequest": {
+						"url": "http://localhost:8080/reserve",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"type\": \"CONF\",\n    \"senderId\": \"userA\",\n    \"senderIssuerId\": \"issuerA\",\n    \"recipientId\": \"userB\",\n    \"recipientIssuerId\": \"issuerB\",\n    \"ubinEscrowId\": \"IssuerAtoIssuerBEscrowId1\",\n    \"amount\": \"500.0\",\n    \"timestamp\": \"\",\n    \"status\": \"SUCCESS\",\n    \"signature\": \"atAF59jdFAC9OJ3CEjk9wv7I01XsCzHlJZLNNaqNK8KqUpBc0T21og81KYvqLG8GmubhUd5I0MjQj2rwlSJYT5tuos9DVqbAE5Yu9uXV04LE1q3wWRS+D5rZza3Ux8bJpB+7WrHSZ1YHAQg1emGmhdK5tg17sxe2HAaIyUhAmbCcCpCy/KDFgsif+ng+/ruR++gqiYP1TQ5aBX9zCSL6J7a4Zh8mILxc1gduuDkJhiMYCWh7j8R6QQGmxEimnlj3XUeL/Xsr5iSLRKd0hdkf2KjCQ1x8BI4WT5r1882FHPa6uhNRlSXY+ApYDQ/NLgXERn5Td4BWa7juFenUoMwJeAyljgPUrD/wxnuxZ6Yj2olqxeRzmtuIBVxCEl4wiJIskrDvFPKSUyAetqPALJMyRMnl1mgJQWZJl1Ed4RBvtEPzK536jx7akeAQqqJGP4qYNnr4YCateKecsK4BMnXLSalWXT6OZIwwrou+9hoMmdueWYTC/MagUyDvAYK7/gMs6uJ6BbxKMqNaYCwniUZRGBH7HHwnm48UyJXMnlnB7sGfp2rY30/6pxwdNe6ngBjmxWHV3N6DfAXND86En4MVLfYdCaVBKyiUnSAXn+9S0M6ohc41yyZ8K8kyFBckmkvmb0B2v1GmU9gED6wh4WtLqTkFPjLjikQnwUnEuEK4jtA=\"\n}"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "60",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "Application/JSON",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 21 Nov 2020 13:26:55 GMT",
+							"description": "The date and time that the message was sent"
+						}
+					],
+					"cookie": [],
+					"responseTime": 36,
+					"body": "[{\"escrowId\":\"IssuerAtoIssuerBEscrowId1\",\"balance\":10000.0}]"
+				}
+			]
+		},
+		{
+			"name": "Sign",
+			"request": {
+				"url": "http://localhost:8080/sign",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"type\": \"TX\",\r\n    \"senderId\": \"userA\",\r\n    \"senderIssuerId\": \"issuerA\",\r\n    \"recipientId\": \"userB\",\r\n    \"recipientIssuerId\": \"issuerB\",\r\n    \"ubinEscrowId\": \"IssuerAtoIssuerBEscrowId1\",\r\n    \"amount\": \"500.0\",\r\n    \"timestamp\": \"1605960991388\",\r\n    \"status\": \"SUCCESS\"\r\n}"
+				},
+				"description": "User Sign simulation"
+			},
+			"response": [
+				{
+					"id": "409cd43c-9faa-4ebe-aca9-14d486e038ae",
+					"name": "Sign",
+					"originalRequest": {
+						"url": "http://localhost:8080/sign",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"type\": \"TX\",\r\n    \"senderId\": \"userA\",\r\n    \"senderIssuerId\": \"issuerA\",\r\n    \"recipientId\": \"userB\",\r\n    \"recipientIssuerId\": \"issuerB\",\r\n    \"ubinEscrowId\": \"IssuerAtoIssuerBEscrowId1\",\r\n    \"amount\": \"500.0\",\r\n    \"timestamp\": \"1605960991388\",\r\n    \"status\": \"SUCCESS\"\r\n}"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "917",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "Application/JSON",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 21 Nov 2020 13:25:41 GMT",
+							"description": "The date and time that the message was sent"
+						}
+					],
+					"cookie": [],
+					"responseTime": 110,
+					"body": "{\"type\":\"TX\",\"senderId\":\"userA\",\"senderIssuerId\":\"issuerA\",\"recipientId\":\"userB\",\"recipientIssuerId\":\"issuerB\",\"ubinEscrowId\":\"IssuerAtoIssuerBEscrowId1\",\"amount\":\"500.0\",\"timestamp\":\"1605960991388\",\"status\":\"SUCCESS\",\"signature\":\"CEeUL/0qN4ywGoCAVQsEHnG2kWoiuZtN7XqG2PNlKNAeMVXrab2UaAB6EOuYMyrZ4UgqBuOtUMigXqbKdUdRhnzEXSUeHMADXKaKBOGlhB1AiXvWDBiNFlL3/vd166wM13rGmd2oexkbowlzQj2kNPPnQT9g1vSAsDl1yxRUIleDtPGSYNIJNvdx6l/rCyLGjT9HhKhOezQkfPSFBVUuTDIOFF6ZOJ2pw8rnYs5ydD5sQSFoCgIsFxRo3DPpgR92Zx9oQgXs0FGHUObGM8Hh9vuDv4vwUV0jL6PTjZzS0kMaYfrAdppUf295u6jEYwVBPNNw7PE5WwiA+8qz4IWSsulcVcKMosPU/W7VlyeOPNjyfTHU5m3izbrQjKwR0pVavBCi07/QT8J6e/cdwOqehylmmxxgHnH9+C6lgH0PPJ0ujEw8hsYZc4FEu70dkiRMxL97aY8hkGjPZot029+93QlI2OeYtddr9BYyooQ5IdkQy6rDVpkqhUhlPtbN3yOKyGiEwaVhchX4VGJmHlb20nd9jtQZ4I2EG4CK2eQ/IKLyOGyEbG1uOIYXlIsqNsriV/TMgrLtb75iMqcWiq2vh/ChsKipccilGBppKypioZ6pIXYBAIDIXHdqBw6V4eod2l70eLc40HcraXXtw0DQcrIKSQZtueRAzEfVyWlnec4=\"}"
+				}
+			]
+		},
+		{
+			"name": "Check",
+			"request": {
+				"url": "http://localhost:8080/check",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"type\": \"TX\",\n    \"senderId\": \"userA\",\n    \"senderIssuerId\": \"issuerA\",\n    \"recipientId\": \"userB\",\n    \"recipientIssuerId\": \"issuerB\",\n    \"ubinEscrowId\": \"IssuerAtoIssuerBEscrowId1\",\n    \"amount\": \"500.0\",\n    \"timestamp\": \"1605960991388\",\n    \"status\": \"SUCCESS\",\n    \"signature\": \"CEeUL/0qN4ywGoCAVQsEHnG2kWoiuZtN7XqG2PNlKNAeMVXrab2UaAB6EOuYMyrZ4UgqBuOtUMigXqbKdUdRhnzEXSUeHMADXKaKBOGlhB1AiXvWDBiNFlL3/vd166wM13rGmd2oexkbowlzQj2kNPPnQT9g1vSAsDl1yxRUIleDtPGSYNIJNvdx6l/rCyLGjT9HhKhOezQkfPSFBVUuTDIOFF6ZOJ2pw8rnYs5ydD5sQSFoCgIsFxRo3DPpgR92Zx9oQgXs0FGHUObGM8Hh9vuDv4vwUV0jL6PTjZzS0kMaYfrAdppUf295u6jEYwVBPNNw7PE5WwiA+8qz4IWSsulcVcKMosPU/W7VlyeOPNjyfTHU5m3izbrQjKwR0pVavBCi07/QT8J6e/cdwOqehylmmxxgHnH9+C6lgH0PPJ0ujEw8hsYZc4FEu70dkiRMxL97aY8hkGjPZot029+93QlI2OeYtddr9BYyooQ5IdkQy6rDVpkqhUhlPtbN3yOKyGiEwaVhchX4VGJmHlb20nd9jtQZ4I2EG4CK2eQ/IKLyOGyEbG1uOIYXlIsqNsriV/TMgrLtb75iMqcWiq2vh/ChsKipccilGBppKypioZ6pIXYBAIDIXHdqBw6V4eod2l70eLc40HcraXXtw0DQcrIKSQZtueRAzEfVyWlnec4=\"\n}"
+				},
+				"description": "Issuer B checks transaction before sending to Issuer A"
+			},
+			"response": [
+				{
+					"id": "8b67376f-ad71-497b-8ac5-7eede519c679",
+					"name": "Check",
+					"originalRequest": {
+						"url": "http://localhost:8080/check",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"type\": \"TX\",\n    \"senderId\": \"userA\",\n    \"senderIssuerId\": \"issuerA\",\n    \"recipientId\": \"userB\",\n    \"recipientIssuerId\": \"issuerB\",\n    \"ubinEscrowId\": \"IssuerAtoIssuerBEscrowId1\",\n    \"amount\": \"500.0\",\n    \"timestamp\": \"1605960991388\",\n    \"status\": \"SUCCESS\",\n    \"signature\": \"CEeUL/0qN4ywGoCAVQsEHnG2kWoiuZtN7XqG2PNlKNAeMVXrab2UaAB6EOuYMyrZ4UgqBuOtUMigXqbKdUdRhnzEXSUeHMADXKaKBOGlhB1AiXvWDBiNFlL3/vd166wM13rGmd2oexkbowlzQj2kNPPnQT9g1vSAsDl1yxRUIleDtPGSYNIJNvdx6l/rCyLGjT9HhKhOezQkfPSFBVUuTDIOFF6ZOJ2pw8rnYs5ydD5sQSFoCgIsFxRo3DPpgR92Zx9oQgXs0FGHUObGM8Hh9vuDv4vwUV0jL6PTjZzS0kMaYfrAdppUf295u6jEYwVBPNNw7PE5WwiA+8qz4IWSsulcVcKMosPU/W7VlyeOPNjyfTHU5m3izbrQjKwR0pVavBCi07/QT8J6e/cdwOqehylmmxxgHnH9+C6lgH0PPJ0ujEw8hsYZc4FEu70dkiRMxL97aY8hkGjPZot029+93QlI2OeYtddr9BYyooQ5IdkQy6rDVpkqhUhlPtbN3yOKyGiEwaVhchX4VGJmHlb20nd9jtQZ4I2EG4CK2eQ/IKLyOGyEbG1uOIYXlIsqNsriV/TMgrLtb75iMqcWiq2vh/ChsKipccilGBppKypioZ6pIXYBAIDIXHdqBw6V4eod2l70eLc40HcraXXtw0DQcrIKSQZtueRAzEfVyWlnec4=\"\n}"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json;charset=UTF-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 21 Nov 2020 13:27:04 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "transfer-encoding",
+							"key": "transfer-encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						}
+					],
+					"cookie": [],
+					"responseTime": 50,
+					"body": "true"
+				}
+			]
+		},
+		{
+			"name": "Authorize",
+			"request": {
+				"url": "http://localhost:8080/verify",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"type\": \"TX\",\n    \"senderId\": \"userA\",\n    \"senderIssuerId\": \"issuerA\",\n    \"recipientId\": \"userB\",\n    \"recipientIssuerId\": \"issuerB\",\n    \"ubinEscrowId\": \"IssuerAtoIssuerBEscrowId1\",\n    \"amount\": \"500.0\",\n    \"timestamp\": \"1605960991388\",\n    \"status\": \"SUCCESS\",\n    \"signature\": \"CEeUL/0qN4ywGoCAVQsEHnG2kWoiuZtN7XqG2PNlKNAeMVXrab2UaAB6EOuYMyrZ4UgqBuOtUMigXqbKdUdRhnzEXSUeHMADXKaKBOGlhB1AiXvWDBiNFlL3/vd166wM13rGmd2oexkbowlzQj2kNPPnQT9g1vSAsDl1yxRUIleDtPGSYNIJNvdx6l/rCyLGjT9HhKhOezQkfPSFBVUuTDIOFF6ZOJ2pw8rnYs5ydD5sQSFoCgIsFxRo3DPpgR92Zx9oQgXs0FGHUObGM8Hh9vuDv4vwUV0jL6PTjZzS0kMaYfrAdppUf295u6jEYwVBPNNw7PE5WwiA+8qz4IWSsulcVcKMosPU/W7VlyeOPNjyfTHU5m3izbrQjKwR0pVavBCi07/QT8J6e/cdwOqehylmmxxgHnH9+C6lgH0PPJ0ujEw8hsYZc4FEu70dkiRMxL97aY8hkGjPZot029+93QlI2OeYtddr9BYyooQ5IdkQy6rDVpkqhUhlPtbN3yOKyGiEwaVhchX4VGJmHlb20nd9jtQZ4I2EG4CK2eQ/IKLyOGyEbG1uOIYXlIsqNsriV/TMgrLtb75iMqcWiq2vh/ChsKipccilGBppKypioZ6pIXYBAIDIXHdqBw6V4eod2l70eLc40HcraXXtw0DQcrIKSQZtueRAzEfVyWlnec4=\"\n}"
+				},
+				"description": "Issuer A verifies the transaction and generate a confirmation receipt for Issuer B"
+			},
+			"response": [
+				{
+					"id": "f40e7eb6-06a5-4d53-9432-66ba93972fbf",
+					"name": "Verify",
+					"originalRequest": {
+						"url": "http://localhost:8080/verify",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"type\": \"TX\",\n    \"senderId\": \"userA\",\n    \"senderIssuerId\": \"issuerA\",\n    \"recipientId\": \"userB\",\n    \"recipientIssuerId\": \"issuerB\",\n    \"ubinEscrowId\": \"IssuerAtoIssuerBEscrowId1\",\n    \"amount\": \"500.0\",\n    \"timestamp\": \"1605960991388\",\n    \"status\": \"SUCCESS\",\n    \"signature\": \"CEeUL/0qN4ywGoCAVQsEHnG2kWoiuZtN7XqG2PNlKNAeMVXrab2UaAB6EOuYMyrZ4UgqBuOtUMigXqbKdUdRhnzEXSUeHMADXKaKBOGlhB1AiXvWDBiNFlL3/vd166wM13rGmd2oexkbowlzQj2kNPPnQT9g1vSAsDl1yxRUIleDtPGSYNIJNvdx6l/rCyLGjT9HhKhOezQkfPSFBVUuTDIOFF6ZOJ2pw8rnYs5ydD5sQSFoCgIsFxRo3DPpgR92Zx9oQgXs0FGHUObGM8Hh9vuDv4vwUV0jL6PTjZzS0kMaYfrAdppUf295u6jEYwVBPNNw7PE5WwiA+8qz4IWSsulcVcKMosPU/W7VlyeOPNjyfTHU5m3izbrQjKwR0pVavBCi07/QT8J6e/cdwOqehylmmxxgHnH9+C6lgH0PPJ0ujEw8hsYZc4FEu70dkiRMxL97aY8hkGjPZot029+93QlI2OeYtddr9BYyooQ5IdkQy6rDVpkqhUhlPtbN3yOKyGiEwaVhchX4VGJmHlb20nd9jtQZ4I2EG4CK2eQ/IKLyOGyEbG1uOIYXlIsqNsriV/TMgrLtb75iMqcWiq2vh/ChsKipccilGBppKypioZ6pIXYBAIDIXHdqBw6V4eod2l70eLc40HcraXXtw0DQcrIKSQZtueRAzEfVyWlnec4=\"\n}"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "919",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "Application/JSON",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 21 Nov 2020 13:27:14 GMT",
+							"description": "The date and time that the message was sent"
+						}
+					],
+					"cookie": [],
+					"responseTime": 75,
+					"body": "{\"type\":\"CONF\",\"senderId\":\"userA\",\"senderIssuerId\":\"issuerA\",\"recipientId\":\"userB\",\"recipientIssuerId\":\"issuerB\",\"ubinEscrowId\":\"IssuerAtoIssuerBEscrowId1\",\"amount\":\"500.0\",\"timestamp\":\"1605965234443\",\"status\":\"SUCCESS\",\"signature\":\"TBUUYcBKdERb9WMTlG3HxJENjeaQ4fZ+UeCQONA1mStBPEcgFY5tCwitxHuXuiS/nqQvcNnp36FHpxcTCrzu9f964SXZebRJxARGqoCHBgTJ8RaPFsJjhaj3TCv13ehsBYmxfHALKqHHl9rYrA1fPTx2IQVIqX/zydapZaGQ+CcBXf4+7QF8dwYb9Jc6duXikVLUhdVmvjs7O/jbFmGcJ1vgI/ByDAlvCLTTQNVXcabgdVKF7DTYxNk0dkVzMloNU3XBxyks4yiB86ptnic+wRF/hXd0I4j1dThfmGwUX3UUY0fUuS8aWieJkiX8ltfkVgAkznM5RgrUrbYz06M+HR8qGzy1oaKk888gG6E/Z+AZBU1QmcBjZqc5R5QL8utbCld23oEozSXbVPFe8jzKbm9aJViT4iL/NqWsc7qqt2oe75IiRH4YnDAWgtFx3dVQJr2PzNscuFQHY7or10SHrCDF9Qx0QrnQqF9l/SGY6zqMZpcsGS2ZE4Rv2RM0XGK5qlERs0HmeLONAFu7dN6MYcKorj48wYnC4IH/770iwD9FwX3yqQzlXkzQ+TdvMDWi4TqjG1roq6/ILx4b3boRKiSHSriG/TxcmhnxYP5YZRVT2C31s+pcbc+uhzW9FyInYpV3q04GLJ/KjHYjOXCCwRKzfYW9W2sNNM3D5YG1LIs=\"}"
+				}
+			]
+		},
+		{
+			"name": "Verify",
+			"request": {
+				"url": "http://localhost:8080/verify",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"type\": \"CONF\",\n    \"senderId\": \"userA\",\n    \"senderIssuerId\": \"issuerA\",\n    \"recipientId\": \"userB\",\n    \"recipientIssuerId\": \"issuerB\",\n    \"ubinEscrowId\": \"IssuerAtoIssuerBEscrowId1\",\n    \"amount\": \"500.0\",\n    \"timestamp\": \"1605965001265\",\n    \"status\": \"SUCCESS\",\n    \"signature\": \"sg+iV2FOj3/YoZOA837Mh5q806M78nBETLG4FHme6PVEIPBpUFldVuc55GGMfEKn5rVRCF63N5iASrpBHNNTVy3pNC/3CEFpaPnrUm2Cs7oznB7yHxwgtZ2YXJxWRsHhwVTtBzGwgOUPTB6iUtTqi/K6vmt/o6lL9pcnKlEs0hJL1YuoyyhAQiK/yjJTmAmvGZCEiypa1dJnI446BfHRHSs/ptD4anaEIpiQtPH63KdtUY9Mm535P46kNCz6Sh3vH1+0tDiNfW60SnZF3Qg5Dr45JHHBJkZ0VT9Yz1uXmfK2xgcjvWMQXlMOLLzDuv5b4G4ptM4OLuRyGJrp9Sq34xSJfp9dpd6H8A6NwQFNo5m3940naX3+qpJrOYQMM24kDAOL7/8CRCNSoafgJtU1eipFyZmTGnJDy4ijcOUErrA/qR8HygfntwdhgnkFpfC93t1W9VGN5pujIV18bHfnEgrSyDRgssVk/+E0Vg9z+T1tYK2EiF7qybbOymHX6S8Rfe2cIjkjW0B7OlVpq8nQm1cje0v3PfL+3qbMxfjhxRtmS/sFXsAGxNpO3nWrhPablYNblvM79sUGHr9+SiN9LTQaFreTnJaWuZ53SnkkFLa9zhjys7VHqhcm9ZwWeCQa5nK5iTRD7aFLvE/gmHIfouFsXb6Plf4B0wQJYjOYX5A=\"\n}"
+				},
+				"description": "Issuer B verifies confirmation receipt"
+			},
+			"response": [
+				{
+					"id": "6ecf2263-f29a-4243-9afe-b53a1820c5dc",
+					"name": "Verify Receipt",
+					"originalRequest": {
+						"url": "http://localhost:8080/receipt",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"type\": \"CONF\",\n    \"senderId\": \"userA\",\n    \"senderIssuerId\": \"issuerA\",\n    \"recipientId\": \"userB\",\n    \"recipientIssuerId\": \"issuerB\",\n    \"ubinEscrowId\": \"IssuerAtoIssuerBEscrowId1\",\n    \"amount\": \"500.0\",\n    \"timestamp\": \"1605965001265\",\n    \"status\": \"SUCCESS\",\n    \"signature\": \"sg+iV2FOj3/YoZOA837Mh5q806M78nBETLG4FHme6PVEIPBpUFldVuc55GGMfEKn5rVRCF63N5iASrpBHNNTVy3pNC/3CEFpaPnrUm2Cs7oznB7yHxwgtZ2YXJxWRsHhwVTtBzGwgOUPTB6iUtTqi/K6vmt/o6lL9pcnKlEs0hJL1YuoyyhAQiK/yjJTmAmvGZCEiypa1dJnI446BfHRHSs/ptD4anaEIpiQtPH63KdtUY9Mm535P46kNCz6Sh3vH1+0tDiNfW60SnZF3Qg5Dr45JHHBJkZ0VT9Yz1uXmfK2xgcjvWMQXlMOLLzDuv5b4G4ptM4OLuRyGJrp9Sq34xSJfp9dpd6H8A6NwQFNo5m3940naX3+qpJrOYQMM24kDAOL7/8CRCNSoafgJtU1eipFyZmTGnJDy4ijcOUErrA/qR8HygfntwdhgnkFpfC93t1W9VGN5pujIV18bHfnEgrSyDRgssVk/+E0Vg9z+T1tYK2EiF7qybbOymHX6S8Rfe2cIjkjW0B7OlVpq8nQm1cje0v3PfL+3qbMxfjhxRtmS/sFXsAGxNpO3nWrhPablYNblvM79sUGHr9+SiN9LTQaFreTnJaWuZ53SnkkFLa9zhjys7VHqhcm9ZwWeCQa5nK5iTRD7aFLvE/gmHIfouFsXb6Plf4B0wQJYjOYX5A=\"\n}"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json;charset=UTF-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 21 Nov 2020 13:27:42 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "transfer-encoding",
+							"key": "transfer-encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						}
+					],
+					"cookie": [],
+					"responseTime": 31,
+					"body": "true"
+				}
+			]
+		}
+	]
+}
