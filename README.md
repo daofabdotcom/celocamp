@@ -21,7 +21,7 @@ Body: JSON content – unsigned transaction. Sample:  <br>
     "senderIssuerId": "issuerA",  <br>
     "recipientId": "userB",  <br>
     "recipientIssuerId": "issuerB",  <br>
-    "ubinEscrowId": "IssuerAtoIssuerBEscrowId1",  <br>
+    "ubinEscrowId": "",  <br>
     "amount": "500.0",  <br>
     "timestamp": "1605960991388",  <br>
     "status": "SUCCESS"  <br>
@@ -33,7 +33,7 @@ Response Body: JSON content – signed transaction. Sample:  <br>
     "senderIssuerId": "issuerA",  <br>
     "recipientId": "userB",  <br>
     "recipientIssuerId": "issuerB",  <br>
-    "ubinEscrowId": "IssuerAtoIssuerBEscrowId1",  <br>
+    "ubinEscrowId": "",  <br>
     "amount": "500.0",  <br>
     "timestamp": "1605960991388",  <br>
     "status": "SUCCESS",  <br>
@@ -41,8 +41,8 @@ Response Body: JSON content – signed transaction. Sample:  <br>
 }  <br>
  <br>
 # Step 2: Proof-of-Reserve (Part 1)  <br>
-GET Request: /reserve  <br>
-Response Body: JSON content – Json array of all the escrows  <br>
+GET Request: /reserve/issuerB?q=issuerA  <br>
+Response Body: JSON content – JSONArray of all the escrows  <br>
 [  <br>
     {  <br>
         "escrowId": "IssuerAtoIssuerBEscrowId1",
@@ -59,7 +59,7 @@ Response Body: Boolean  <br>
 # Step 4: Transaction Verification  <br>
 Issuer A verifies User A signed transaction  <br>
 Description: Issuer A verifies the transaction by User A and if User A has sufficient balance with Issuer A.  <br>
-POST Request: /verify  <br>
+POST Request: /authorize  <br>
 Body: JSON content – signed transaction from User A  <br>
 Response Body: JSON content – signed confirmation receipt (Receipt signed by Issuer A to Issuer B. Its status is “SUCCESS” if User A has enough balance else “FAILED”. Receipt contains escrowId from which Issuer A is going to pay Issuer B in case of SUCCESS.)  <br>
 {  <br>
@@ -76,8 +76,8 @@ Response Body: JSON content – signed confirmation receipt (Receipt signed by I
 } 
  <br>
 # Step 5: Confirmation Receipt  <br>
-Description: Issuer B verifies the confirmation receipt signed by Issuer B. Checks the status is SUCCESS and ubin escrow Id is valid and have funds in it.  <br>
-POST Request: /receipt  <br>
+Description: Issuer B verifies the confirmation receipt signed by Issuer A. Checks the status is SUCCESS and ubin escrow Id is valid and have funds in it.  <br>
+POST Request: /verify  <br>
 Body: JSON content – signed confirmation receipt from Issuer A  <br>
 Response Body - Boolean  <br>
  <br>
