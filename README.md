@@ -8,7 +8,7 @@ An issuer refers to a e-money issuer/solution such as Celo. User A is a user of 
 An Ubin escrow of USD$10,000 has been created by Issuer A in favour of Issuer B.  <br>
 User A has an account of USD $100 balance with Issuer A and User B has an account of USD $200 balance with Issuer B.   <br>
  <br>
-http://localhost:8080/  <br>
+URL: https://api.daofab.com/api/celo/transaction  <br>
  <br>
 
 # Step 1: Signing of Transaction
