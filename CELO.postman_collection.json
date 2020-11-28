@@ -10,7 +10,31 @@
 		{
 			"name": "Reserve",
 			"request": {
-				"url": "http://localhost:8080/reserve",
+				"url": {
+					"raw": "https://api.daofab.com/api/celo/transaction/reserve/issuerB?q=issuerA",
+					"protocol": "https",
+					"host": [
+						"api",
+						"daofab",
+						"com"
+					],
+					"path": [
+						"api",
+						"celo",
+						"transaction",
+						"reserve",
+						"issuerB"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "issuerA",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
 				"method": "GET",
 				"header": [
 					{
@@ -27,7 +51,7 @@
 			},
 			"response": [
 				{
-					"id": "676d397c-82ff-4634-b073-10fa22d6c283",
+					"id": "b93496da-d6ff-431c-b6b8-1a5e5e0719a7",
 					"name": "Reserve",
 					"originalRequest": {
 						"url": "http://localhost:8080/reserve",
@@ -77,7 +101,7 @@
 		{
 			"name": "Sign",
 			"request": {
-				"url": "http://localhost:8080/sign",
+				"url": "https://api.daofab.com/api/celo/transaction/sign",
 				"method": "POST",
 				"header": [
 					{
@@ -88,13 +112,13 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"type\": \"TX\",\r\n    \"senderId\": \"userA\",\r\n    \"senderIssuerId\": \"issuerA\",\r\n    \"recipientId\": \"userB\",\r\n    \"recipientIssuerId\": \"issuerB\",\r\n    \"ubinEscrowId\": \"IssuerAtoIssuerBEscrowId1\",\r\n    \"amount\": \"500.0\",\r\n    \"timestamp\": \"1605960991388\",\r\n    \"status\": \"SUCCESS\"\r\n}"
+					"raw": "{\r\n    \"type\": \"TX\",\r\n    \"senderId\": \"userA\",\r\n    \"senderIssuerId\": \"issuerA\",\r\n    \"recipientId\": \"userB\",\r\n    \"recipientIssuerId\": \"issuerB\",\r\n    \"ubinEscrowId\": \"\",\r\n    \"amount\": \"50.0\",\r\n    \"timestamp\": \"1605960991388\",\r\n    \"status\": \"SUCCESS\"\r\n}"
 				},
 				"description": "User Sign simulation"
 			},
 			"response": [
 				{
-					"id": "409cd43c-9faa-4ebe-aca9-14d486e038ae",
+					"id": "438e2378-73b4-4506-b2ab-ed06fdd9b1a6",
 					"name": "Sign",
 					"originalRequest": {
 						"url": "http://localhost:8080/sign",
@@ -144,7 +168,7 @@
 		{
 			"name": "Check",
 			"request": {
-				"url": "http://localhost:8080/check",
+				"url": "https://api.daofab.com/api/celo/transaction/check",
 				"method": "POST",
 				"header": [
 					{
@@ -155,13 +179,13 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"type\": \"TX\",\n    \"senderId\": \"userA\",\n    \"senderIssuerId\": \"issuerA\",\n    \"recipientId\": \"userB\",\n    \"recipientIssuerId\": \"issuerB\",\n    \"ubinEscrowId\": \"IssuerAtoIssuerBEscrowId1\",\n    \"amount\": \"500.0\",\n    \"timestamp\": \"1605960991388\",\n    \"status\": \"SUCCESS\",\n    \"signature\": \"CEeUL/0qN4ywGoCAVQsEHnG2kWoiuZtN7XqG2PNlKNAeMVXrab2UaAB6EOuYMyrZ4UgqBuOtUMigXqbKdUdRhnzEXSUeHMADXKaKBOGlhB1AiXvWDBiNFlL3/vd166wM13rGmd2oexkbowlzQj2kNPPnQT9g1vSAsDl1yxRUIleDtPGSYNIJNvdx6l/rCyLGjT9HhKhOezQkfPSFBVUuTDIOFF6ZOJ2pw8rnYs5ydD5sQSFoCgIsFxRo3DPpgR92Zx9oQgXs0FGHUObGM8Hh9vuDv4vwUV0jL6PTjZzS0kMaYfrAdppUf295u6jEYwVBPNNw7PE5WwiA+8qz4IWSsulcVcKMosPU/W7VlyeOPNjyfTHU5m3izbrQjKwR0pVavBCi07/QT8J6e/cdwOqehylmmxxgHnH9+C6lgH0PPJ0ujEw8hsYZc4FEu70dkiRMxL97aY8hkGjPZot029+93QlI2OeYtddr9BYyooQ5IdkQy6rDVpkqhUhlPtbN3yOKyGiEwaVhchX4VGJmHlb20nd9jtQZ4I2EG4CK2eQ/IKLyOGyEbG1uOIYXlIsqNsriV/TMgrLtb75iMqcWiq2vh/ChsKipccilGBppKypioZ6pIXYBAIDIXHdqBw6V4eod2l70eLc40HcraXXtw0DQcrIKSQZtueRAzEfVyWlnec4=\"\n}"
+					"raw": "{\n    \"type\": \"TX\",\n    \"senderId\": \"userA\",\n    \"senderIssuerId\": \"issuerA\",\n    \"recipientId\": \"userB\",\n    \"recipientIssuerId\": \"issuerB\",\n    \"ubinEscrowId\": \"\",\n    \"amount\": \"500.0\",\n    \"timestamp\": \"1605960991388\",\n    \"status\": \"SUCCESS\",\n    \"signature\": \"VjZDYTOyFT+tUxoojwcKdqobhhtV7j0F3xFbMj9oW2lYhRjNWr0/GW2bXaY0DsWUY56k50+dI150YLgGzN34xNi/xmkuSq5tr4bfFIdBIsGAexeoWXjmL1O1do4mOtZPXlO3qxWRG4B7u7y3uml7Y4MswMtLlKuO1u8CTwoWX4MhgUSyH4DCUU9zZwv5lnIMU7sDBvKKoJqddPmNs9tdu+FyipjW8qHK1BQXZnt7LsrxjjmVbNVHjrbGhfXF79HnYdk9REDjx8Z6MkzvJ6quwxfku75b5rSjqzO90UQr/kISlcBr+9ZdRTY3u+Aovr4hAj2uCP/dfz2gNsLCqvrI3rRge77bBKsNNnkLn/h4fk7DxBAgtI+F2+X84LpM8voDCMpXrBagoU2MoC9QWxzV1P82gsoExda+Y3Ciws1ivK+odjpRCE9UQzDeRwNb/lHgX2OujpMdwbLtrP9zCr2Vff3H8Dp24vlgf+EY6V8CEa2Bo1YGBz6UFroblPJoCXFb7uZ9CpTljvK7l3JpyVLpBDNQBEKm0+V4bMtRPzOSXoi+jhcqwVvAE6pz2wanTqKFhwF2F7DLqNDbcFvuYnlYLF97e84QpXGQ4D+p6GiHfrFHriSDcTZv3Ae8twGkrYAiqtewpPyFAxbhDPyWebvEdBlxIcqswKN3jFfUWYoyxcM=\"\n}"
 				},
 				"description": "Issuer B checks transaction before sending to Issuer A"
 			},
 			"response": [
 				{
-					"id": "8b67376f-ad71-497b-8ac5-7eede519c679",
+					"id": "994a20a9-c54a-41f5-9376-e3fdc0d9fb36",
 					"name": "Check",
 					"originalRequest": {
 						"url": "http://localhost:8080/check",
@@ -211,7 +235,7 @@
 		{
 			"name": "Authorize",
 			"request": {
-				"url": "http://localhost:8080/verify",
+				"url": "https://api.daofab.com/api/celo/transaction/authorize",
 				"method": "POST",
 				"header": [
 					{
@@ -222,13 +246,13 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"type\": \"TX\",\n    \"senderId\": \"userA\",\n    \"senderIssuerId\": \"issuerA\",\n    \"recipientId\": \"userB\",\n    \"recipientIssuerId\": \"issuerB\",\n    \"ubinEscrowId\": \"IssuerAtoIssuerBEscrowId1\",\n    \"amount\": \"500.0\",\n    \"timestamp\": \"1605960991388\",\n    \"status\": \"SUCCESS\",\n    \"signature\": \"CEeUL/0qN4ywGoCAVQsEHnG2kWoiuZtN7XqG2PNlKNAeMVXrab2UaAB6EOuYMyrZ4UgqBuOtUMigXqbKdUdRhnzEXSUeHMADXKaKBOGlhB1AiXvWDBiNFlL3/vd166wM13rGmd2oexkbowlzQj2kNPPnQT9g1vSAsDl1yxRUIleDtPGSYNIJNvdx6l/rCyLGjT9HhKhOezQkfPSFBVUuTDIOFF6ZOJ2pw8rnYs5ydD5sQSFoCgIsFxRo3DPpgR92Zx9oQgXs0FGHUObGM8Hh9vuDv4vwUV0jL6PTjZzS0kMaYfrAdppUf295u6jEYwVBPNNw7PE5WwiA+8qz4IWSsulcVcKMosPU/W7VlyeOPNjyfTHU5m3izbrQjKwR0pVavBCi07/QT8J6e/cdwOqehylmmxxgHnH9+C6lgH0PPJ0ujEw8hsYZc4FEu70dkiRMxL97aY8hkGjPZot029+93QlI2OeYtddr9BYyooQ5IdkQy6rDVpkqhUhlPtbN3yOKyGiEwaVhchX4VGJmHlb20nd9jtQZ4I2EG4CK2eQ/IKLyOGyEbG1uOIYXlIsqNsriV/TMgrLtb75iMqcWiq2vh/ChsKipccilGBppKypioZ6pIXYBAIDIXHdqBw6V4eod2l70eLc40HcraXXtw0DQcrIKSQZtueRAzEfVyWlnec4=\"\n}"
+					"raw": "{\n    \"type\": \"TX\",\n    \"senderId\": \"userA\",\n    \"senderIssuerId\": \"issuerA\",\n    \"recipientId\": \"userB\",\n    \"recipientIssuerId\": \"issuerB\",\n    \"ubinEscrowId\": \"\",\n    \"amount\": \"50.0\",\n    \"timestamp\": \"1605960991388\",\n    \"status\": \"SUCCESS\",\n    \"signature\": \"c2eaec1Iv0vUGK+ctOe2a2SF/TCqUttmg0ZFj1im1U1dbks/PBVx8DG90DjtkOsMBhfvLarOgmP1RuSmkfWs+noi5Q690M62CksQEXWBy+XYEsvdRvY1Fb8lgikfhMiqioSvFPGv983/hBF2Uvtng0vjFJkUgb9ekk31JB5lwiuT8d6hqCluPv0Vv+dL1SCE6Whc/35EqeTtdqP3CCtEX3JzFpmcDHn8QnijL1bnTncXZBOEy4SVon6cTp3y66ZGAAnE0WP8qem2lewFp+o8+MzFhI6RXtKD6ifG/N6V4QBlUoFBBd7UN8IEdX8KlRKoRdxiTLZo1Z6WurGyJrkrymYwuZcCCMgeSBl9RVivmKT0m8peGObx/4R4eTmNCc1kz6d+C5i5B4GnD0pRiGmEuVpMnA/VHf81ItZzDF/rqgeVBZTgBg7COhqBTm/1kpuMnacrARCPzYp4Q791986o9tBGGTFEOwcEUdRX6T5H9MzH7IG1tpBLoxW7iV4wU0IQe28am4f746IN6y8Zvn5XWisd/2sMp3bghzRVummP6HxjAO5FnWxHo+U6Wirt6Wi3PcPLk7/yCrU4x+f5FMkkfuDq7phi8RO/XVsG8YKsQ09q0YM/sOLhiPyz5rE1GuPrehw3Sy03YLPUeAa4n820JHJBjj2fw4QWU7cgxLZStyI=\"\n}"
 				},
 				"description": "Issuer A verifies the transaction and generate a confirmation receipt for Issuer B"
 			},
 			"response": [
 				{
-					"id": "f40e7eb6-06a5-4d53-9432-66ba93972fbf",
+					"id": "d96f6c16-1884-4671-a63d-2e6000739753",
 					"name": "Verify",
 					"originalRequest": {
 						"url": "http://localhost:8080/verify",
@@ -278,7 +302,7 @@
 		{
 			"name": "Verify",
 			"request": {
-				"url": "http://localhost:8080/verify",
+				"url": "https://api.daofab.com/api/celo/transaction/verify",
 				"method": "POST",
 				"header": [
 					{
@@ -289,13 +313,13 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"type\": \"CONF\",\n    \"senderId\": \"userA\",\n    \"senderIssuerId\": \"issuerA\",\n    \"recipientId\": \"userB\",\n    \"recipientIssuerId\": \"issuerB\",\n    \"ubinEscrowId\": \"IssuerAtoIssuerBEscrowId1\",\n    \"amount\": \"500.0\",\n    \"timestamp\": \"1605965001265\",\n    \"status\": \"SUCCESS\",\n    \"signature\": \"sg+iV2FOj3/YoZOA837Mh5q806M78nBETLG4FHme6PVEIPBpUFldVuc55GGMfEKn5rVRCF63N5iASrpBHNNTVy3pNC/3CEFpaPnrUm2Cs7oznB7yHxwgtZ2YXJxWRsHhwVTtBzGwgOUPTB6iUtTqi/K6vmt/o6lL9pcnKlEs0hJL1YuoyyhAQiK/yjJTmAmvGZCEiypa1dJnI446BfHRHSs/ptD4anaEIpiQtPH63KdtUY9Mm535P46kNCz6Sh3vH1+0tDiNfW60SnZF3Qg5Dr45JHHBJkZ0VT9Yz1uXmfK2xgcjvWMQXlMOLLzDuv5b4G4ptM4OLuRyGJrp9Sq34xSJfp9dpd6H8A6NwQFNo5m3940naX3+qpJrOYQMM24kDAOL7/8CRCNSoafgJtU1eipFyZmTGnJDy4ijcOUErrA/qR8HygfntwdhgnkFpfC93t1W9VGN5pujIV18bHfnEgrSyDRgssVk/+E0Vg9z+T1tYK2EiF7qybbOymHX6S8Rfe2cIjkjW0B7OlVpq8nQm1cje0v3PfL+3qbMxfjhxRtmS/sFXsAGxNpO3nWrhPablYNblvM79sUGHr9+SiN9LTQaFreTnJaWuZ53SnkkFLa9zhjys7VHqhcm9ZwWeCQa5nK5iTRD7aFLvE/gmHIfouFsXb6Plf4B0wQJYjOYX5A=\"\n}"
+					"raw": "{\n    \"type\": \"CONF\",\n    \"senderId\": \"userA\",\n    \"senderIssuerId\": \"issuerA\",\n    \"recipientId\": \"userB\",\n    \"recipientIssuerId\": \"issuerB\",\n    \"ubinEscrowId\": \"01208DEBFAB5D6163B5A0D258F556DDF61AD9B02B2C12A2EE847DB7E5339AC05\",\n    \"amount\": \"50.0\",\n    \"timestamp\": \"1606451289230\",\n    \"status\": \"SUCCESS\",\n    \"signature\": \"ZWhZ+MiNyTDJNmbK9E2UA1OWWZUgcgcLNj6F84hHkfD/jQMfSrZ/kbH8xekZHA6ab5JIxRusX8AwphnrQpz3fDrqWUVXQmaVyy9GUfKETkyIyQRhxHoMV7IZ1XPlcF8ge8T76Q0xZHwZ98hCsgyuWL72Vw2x5hA2fUbrpi8LHqr8G6nLqU7Y6HfC+O6s9a4Qvx7qxGXTD21/K40Y/jSpGw+kq1QRsGFAU8TG/qCXG+DnOOlElMSKCR7tPqvCRebn3zp4Eg2tfAHdG+AZfjgyy8AnL+V6+gtrB5qOLv1FNFKRhmuD47y3+0fWWMW5vZAODOaASOKMW970WUKIQMo24U/U4fUB8aJxJa06i35H54MUxpA9IzbrcyjHcesAmUjEBxWRUDsmObpcYoG2hRhqMjQONM9ho0ATHRuMgy5uTkt/7l3LowGScJE9mi1ljLaWIlImZtxc1Fw/wV0yC/3lfX6JbFlazOW8fJGtD+9pqzHggo2lcv3ZB+6KkzcvbLBaUjndgf1aANSakPV84VINRWSD8FBD/wwBj95kCdeulM02htnqw4nuIF1/yat9sW2d7cUgFJZcfxAQsNnYLB1BiZ0rGjRg6CSd8jfyOUbx5K0gl2KmrrwHngx9klIyYGlOqW2ug4Oe1AyYjkLe5YSQw1Ud3DzA5lNEN7B8O91DUlo=\"\n}"
 				},
 				"description": "Issuer B verifies confirmation receipt"
 			},
 			"response": [
 				{
-					"id": "6ecf2263-f29a-4243-9afe-b53a1820c5dc",
+					"id": "a940cc5c-a305-4597-94b2-52d0b87e351a",
 					"name": "Verify Receipt",
 					"originalRequest": {
 						"url": "http://localhost:8080/receipt",
@@ -341,6 +365,17 @@
 					"body": "true"
 				}
 			]
+		},
+		{
+			"name": "User",
+			"request": {
+				"url": "https://api.daofab.com/api/celo/transaction/user/userA",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Get user balance information"
+			},
+			"response": []
 		}
 	]
 }
