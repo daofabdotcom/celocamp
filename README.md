@@ -1,5 +1,9 @@
 # Celo Camp Instructions for Testing
 
+<b> By design, stable coins are not intended to be interoperable (e.g. off-ramp options may not be available in certain countries, the stable coin may exist on a different blockchain network, merchants may certain inclination to accept only certain stable coins etc). 
+ 
+ Using a series of Open APIs, we aim to allow interoperability between different types of asset-backed stable coins while using a common blockchain as a settlement layer (between different e-money issuers of different types of stable coins). 
+
 # Facilitating Interoperable cUSD by connecting cUSD with local e-money issuers/solutions
 <br> 
 Background:- <br>
